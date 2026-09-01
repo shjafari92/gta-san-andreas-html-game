@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA: San Andreas - HTML Edition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    
+    <!-- Touch Controls -->
+    <div class="controls-container">
+        <!-- Movement Joystick -->
+        <div class="joystick" id="leftJoystick">
+            <div class="joystick-bg">
+                <div class="joystick-stick"></div>
+            </div>
+        </div>
+        
+        <!-- Action Buttons -->
+        <div class="button-group">
+            <button class="action-btn jump" id="jumpBtn">Jump</button>
+            <button class="action-btn fire" id="fireBtn">Fire</button>
+            <button class="action-btn enter" id="enterBtn">Enter</button>
+        </div>
+        
+        <!-- Mini Map -->
+        <div class="minimap-container">
+            <canvas id="minimap"></canvas>
+        </div>
+        
+        <!-- HUD Info -->
+        <div class="hud-info">
+            <div class="health">Health: <span id="healthValue">100</span></div>
+            <div class="armor">Armor: <span id="armorValue">0</span></div>
+            <div class="weapon">Weapon: <span id="weaponValue">Fist</span></div>
+            <div class="wanted">Wanted Level: <span id="wantedValue">0</span></div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
